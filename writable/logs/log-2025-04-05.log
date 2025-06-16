@@ -1,0 +1,1277 @@
+DEBUG - 2025-04-05 10:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 10:31:13 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/lansia/arsipkan]
+in APPPATH\Controllers\LansiaController.php on line 91.
+ 1 APPPATH\Controllers\LansiaController.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Controllers\\LansiaController.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 10:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 10:31:19 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/lansia/arsipkan]
+in APPPATH\Controllers\LansiaController.php on line 91.
+ 1 APPPATH\Controllers\LansiaController.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Controllers\\LansiaController.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 10:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 10:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 11:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 15:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:06:29 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in APPPATH\Controllers\LansiaController.php on line 91.
+ 1 APPPATH\Controllers\LansiaController.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Controllers\\LansiaController.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:07:56 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in APPPATH\Controllers\LansiaController.php on line 91.
+ 1 APPPATH\Controllers\LansiaController.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Controllers\\LansiaController.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:09:09 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('33', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:09:16 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/35]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('35', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('35')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:09:40 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('33', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:12:00 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('33', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:12:33 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/33]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('33', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('33')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:12:45 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/34]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('34', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:13:13 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/34]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(96): CodeIgniter\Model->update('34', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:14:51 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/lansia/arsipkan/34]
+in APPPATH\Controllers\LansiaController.php on line 91.
+ 1 APPPATH\Controllers\LansiaController.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Controllers\\LansiaController.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 16:15:15 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: admin/lansia/arsipkan/34]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\LansiaController.php(97): CodeIgniter\Model->update('34', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 16:19:15 --> mysqli_sql_exception: Duplicate entry '340217 700953 0001' for key 'unique_nik' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\LansiaController.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-05 16:19:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '340217 700953 0001' for key 'unique_nik'
+[Method: POST, Route: admin/lansia/arsipkan/34]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:19:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '340217 700953 0001' for key 'unique_nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 700953 0001\', \'Muqodimah\', \'Surobayan RT 02\', \'71\', \'P\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 700953 0001\', \'Muqodimah\', \'Surobayan RT 02\', \'71\', \'P\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:19:15 --> [Caused by] mysqli_sql_exception: Duplicate entry '340217 700953 0001' for key 'unique_nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 700953 0001\', \'Muqodimah\', \'Surobayan RT 02\', \'71\', \'P\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 700953 0001\', \'Muqodimah\', \'Surobayan RT 02\', \'71\', \'P\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 700953 0001\', \'Muqodimah\', \'Surobayan RT 02\', \'71\', \'P\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('34')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 16:19:25 --> mysqli_sql_exception: Duplicate entry '340217 661262 0001' for key 'unique_nik' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\LansiaController.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('43')
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-05 16:19:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '340217 661262 0001' for key 'unique_nik'
+[Method: POST, Route: admin/lansia/arsipkan/43]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('43')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:19:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '340217 661262 0001' for key 'unique_nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 661262 0001\', \'Veronica Jumarti\', \'Surobayan RT 02\', \'62\', \'P\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 661262 0001\', \'Veronica Jumarti\', \'Surobayan RT 02\', \'62\', \'P\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('43')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:19:25 --> [Caused by] mysqli_sql_exception: Duplicate entry '340217 661262 0001' for key 'unique_nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 661262 0001\', \'Veronica Jumarti\', \'Surobayan RT 02\', \'62\', \'P\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 661262 0001\', \'Veronica Jumarti\', \'Surobayan RT 02\', \'62\', \'P\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (\'340217 661262 0001\', \'Veronica Jumarti\', \'Surobayan RT 02\', \'62\', \'P\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\LansiaController.php(109): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->arsipkan('43')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 16:51:46 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\LansiaController.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-05 16:51:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+[Method: POST, Route: admin/lansia/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:51:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:51:46 --> [Caused by] mysqli_sql_exception: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 16:51:57 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\LansiaController.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-05 16:51:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+[Method: POST, Route: admin/lansia/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:51:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:51:57 --> [Caused by] mysqli_sql_exception: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 16:55:18 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\LansiaController.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-05 16:55:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+[Method: POST, Route: admin/lansia/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:55:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 16:55:18 --> [Caused by] mysqli_sql_exception: Column 'nik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_lansia_surobayan` (`nik`, `nama`, `alamat`, `usia`, `jenis_kelamin`) VALUES (:nik:, :nama:, :alamat:, :usia:, :jenis_kelamin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\LansiaController.php(53): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 16:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 16:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 17:13:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/remajaputri/index.php"
+[Method: GET, Route: admin/data-remaja-putri]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/remajaputri/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/remajaputri/index', [], true)
+ 3 APPPATH\Controllers\RemajaPutriController.php(39): view('admin/remajaputri/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 17:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 17:26:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah_remajaputri.php"
+[Method: GET, Route: admin/remajaputri/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah_remajaputri.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah_remajaputri', [], true)
+ 3 APPPATH\Controllers\RemajaPutriController.php(33): view('admin/tambah_remajaputri')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 17:26:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah_remajaputri.php"
+[Method: GET, Route: admin/remajaputri/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah_remajaputri.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah_remajaputri', [], true)
+ 3 APPPATH\Controllers\RemajaPutriController.php(33): view('admin/tambah_remajaputri')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 17:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 17:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 18:17:19 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:17:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:17:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:17:19 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 18:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 18:20:51 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:20:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:51 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-05 18:20:56 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:20:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:56 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-05 18:20:59 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:20:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:20:59 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-05 18:21:03 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:21:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:21:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:21:03 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-05 18:21:12 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:21:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:21:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:21:12 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'lainnya\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'lainnya')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 18:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 18:23:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:23:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:23:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:23:23 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'pindah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'pindah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 18:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 18:29:11 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:29:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:29:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:29:11 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-05 18:29:15 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\posyandu\app\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-05 18:29:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/remajaputri/arsipkan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 2 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:29:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 4 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-05 18:29:15 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (\'angga\', \'3510031802040006\', \'2025-03-04\', \'B\', \'12\', \'SUROBAYAN RT 10\', \'089990009876\', \'2025-03-17 00:49:46\', \'menikah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_arsip_remajaputri2025_surobayan` (`nama_lengkap`, `nik`, `tanggal_lahir`, `golongan_darah`, `kadar_hb`, `alamat`, `nomor_telepon`, `created_at`, `kategori_arsip`) VALUES (:nama_lengkap:, :nik:, :tanggal_lahir:, :golongan_darah:, :kadar_hb:, :alamat:, :nomor_telepon:, :created_at:, :kategori_arsip:)', [...], false)
+ 5 APPPATH\Models\RemajaPutriModel.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RemajaPutriController.php(64): App\Models\RemajaPutriModel->arsipkan('1', 'menikah')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RemajaPutriController->arsipkan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemajaPutriController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-05 18:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 18:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

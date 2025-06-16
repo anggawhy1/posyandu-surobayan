@@ -1,0 +1,1722 @@
+DEBUG - 2025-03-17 05:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-17 05:48:27 --> mysqli_sql_exception: Duplicate entry '3510031802049003' for key 'nik' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 05:48:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3510031802049003' for key 'nik'
+[Method: POST, Route: data-ibu-hamil/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 05:48:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3510031802049003' for key 'nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802940009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802940009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 05:48:27 --> [Caused by] mysqli_sql_exception: Duplicate entry '3510031802049003' for key 'nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802940009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802940009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802940009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-17 05:48:41 --> mysqli_sql_exception: Duplicate entry '3510031802049003' for key 'nik' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posyandu\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 05:48:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3510031802049003' for key 'nik'
+[Method: POST, Route: data-ibu-hamil/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 05:48:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3510031802049003' for key 'nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802930009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802930009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 05:48:41 --> [Caused by] mysqli_sql_exception: Duplicate entry '3510031802049003' for key 'nik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802930009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802930009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (\'3510031802049003\', \'HJJ\', \'3510031802930009\', \'FGG\', \'HJH\', \'GHJG\', \'2025-02-23\', \'2025-03-29\', \'9\', \'O\', \'B\', \'77.9\', \'56\', \'098890098765\', \'HH\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_data_ibuhamil_surobayan` (`nik`, `nama_ibu_hamil`, `nik_suami`, `nama_suami`, `pekerjaan_ibu_hamil`, `pekerjaan_suami`, `tgl_mulai_hamil`, `tgl_perkiraan_lahir`, `usia_kehamilan`, `golDarah_ibu_hamil`, `golDarah_suami`, `kadar_hb`, `bb_sebelum_hamil`, `no_telepon`, `alamat`) VALUES (:nik:, :nama_ibu_hamil:, :nik_suami:, :nama_suami:, :pekerjaan_ibu_hamil:, :pekerjaan_suami:, :tgl_mulai_hamil:, :tgl_perkiraan_lahir:, :usia_kehamilan:, :golDarah_ibu_hamil:, :golDarah_suami:, :kadar_hb:, :bb_sebelum_hamil:, :no_telepon:, :alamat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DataIbuHamil.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataIbuHamil->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataIbuHamil))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-17 06:17:20 --> mysqli_sql_exception: Table 'posyandusurobayan_db.tb_data_usia_produktif_rt010' doesn't exist in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\posyandu\app\Views\admin\dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\posyandu\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\posyandu\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\posyandu\system\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\AdminController.php(9): view('admin/dashboard')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\AdminController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 06:17:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_data_usia_produktif_rt010' doesn't exist
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Views\admin\dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:17:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_data_usia_produktif_rt010' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 3 APPPATH\Views\admin\dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:17:20 --> [Caused by] mysqli_sql_exception: Table 'posyandusurobayan_db.tb_data_usia_produktif_rt010' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 4 APPPATH\Views\admin\dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT 
+        COUNT(*) AS total, 
+        SUM(CASE WHEN jenis_kelamin = \'P\' THEN 1 ELSE 0 END) AS cewek,
+        SUM(CASE WHEN jenis_kelamin = \'L\' THEN 1 ELSE 0 END) AS cowok
+        FROM tb_data_usia_produktif_rt010')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 8 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:21:13 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:22:23 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:23:30 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:25:39 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:26:30 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:34:31 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:38:12 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:38:19 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:40:23 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:41:13 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:44:11 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:44:12 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:44:14 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:51:25 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: dashboard/admin]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:51:32 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:51:50 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:53:18 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:53:38 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:54:59 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:00 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:01 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:01 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:02 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:02 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:33 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:55:50 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:56:52 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 06:57:53 --> ErrorException: Undefined variable $dataKategori
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataKategori', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-17 08:00:23 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\posyandu\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\posyandu\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-17 08:03:22 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\posyandu\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\posyandu\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\posyandu\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-17 08:17:50 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:18:55 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:18:56 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:18:57 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:18:57 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:19:02 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:19:03 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 12.
+ 1 APPPATH\Views\admin\dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:28:58 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:30:41 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:30:43 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:32:14 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 10.
+ 1 APPPATH\Views\admin\dashboard.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:48:36 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 29.
+ 1 APPPATH\Views\admin\dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:48:54 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 33.
+ 1 APPPATH\Views\admin\dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:49:39 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 6.
+ 1 APPPATH\Views\admin\dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:49:47 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 6.
+ 1 APPPATH\Views\admin\dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 08:51:47 --> ErrorException: Undefined variable $balita
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\admin\dashboard.php on line 6.
+ 1 APPPATH\Views\admin\dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $balita', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(9): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 09:22:18 --> ErrorException: Undefined variable $lansia
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 36.
+ 1 APPPATH\Views\admin\data_lansia.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lansia', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:45:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 12:47:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_lansia.php"
+[Method: GET, Route: data-lansia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_lansia.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_lansia', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('data_lansia')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataLansia()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 13:17:14 --> ErrorException: Undefined variable $gender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 13:20:16 --> ErrorException: Undefined variable $gender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 13.
+ 1 APPPATH\Views\admin\data_lansia.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 13:22:30 --> ErrorException: Undefined variable $gender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 13.
+ 1 APPPATH\Views\admin\data_lansia.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 13:32:05 --> ErrorException: Undefined variable $gender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 14:43:12 --> ErrorException: Undefined variable $ibuHamil
+[Method: GET, Route: admin/data-ibu-hamil]
+in APPPATH\Views\admin\data_ibu_hamil.php on line 37.
+ 1 APPPATH\Views\admin\data_ibu_hamil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ibuHamil', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_ibu_hamil', [], true)
+ 5 APPPATH\Controllers\AdminController.php(31): view('admin/data_ibu_hamil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataIbuHamil()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 14:43:42 --> ErrorException: Undefined variable $ibuHamil
+[Method: GET, Route: admin/data-ibu-hamil]
+in APPPATH\Views\admin\data_ibu_hamil.php on line 37.
+ 1 APPPATH\Views\admin\data_ibu_hamil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ibuHamil', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_ibu_hamil', [], true)
+ 5 APPPATH\Controllers\AdminController.php(31): view('admin/data_ibu_hamil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataIbuHamil()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 15:30:23 --> ErrorException: Undefined variable $ibuHamil
+[Method: GET, Route: admin/data-ibu-hamil]
+in APPPATH\Views\admin\data_ibu_hamil.php on line 37.
+ 1 APPPATH\Views\admin\data_ibu_hamil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ibuHamil', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_ibu_hamil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_ibu_hamil', [], true)
+ 5 APPPATH\Controllers\AdminController.php(31): view('admin/data_ibu_hamil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataIbuHamil()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 16:15:58 --> ErrorException: Undefined variable $lansia
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 36.
+ 1 APPPATH\Views\admin\data_lansia.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lansia', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 16:28:51 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 16:33:38 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 16:34:57 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-17 16:55:47 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#8 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2025-03-17 16:55:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given
+[Method: CLI, Route: db:table]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `posyandusurobayan_db`')
+ 3 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-03-17 17:33:08 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#8 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2025-03-17 17:33:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given
+[Method: CLI, Route: db:table]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `posyandusurobayan_db`')
+ 3 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-03-17 17:40:14 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#8 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2025-03-17 17:40:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given
+[Method: CLI, Route: db:table]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `posyandusurobayan_db`')
+ 3 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-03-17 17:44:44 --> Error connecting to the database: TypeError: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posyandusurobay...', '3306', '', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\posyandu\system\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\posyandu\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 C:\xampp\htdocs\posyandu\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 C:\xampp\htdocs\posyandu\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#7 C:\xampp\htdocs\posyandu\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#8 C:\xampp\htdocs\posyandu\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2025-03-17 17:44:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: mysqli::real_connect(): Argument #5 ($port) must be of type ?int, string given
+[Method: CLI, Route: db:table]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `posyandusurobayan_db`')
+ 3 SYSTEMPATH\Commands\Database\ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-03-17 17:54:33 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 17:56:14 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-17 18:13:51 --> ErrorException: Undefined variable $selectedGender
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data_lansia.php on line 14.
+ 1 APPPATH\Views\admin\data_lansia.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedGender', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_lansia', [], true)
+ 5 APPPATH\Controllers\AdminController.php(19): view('admin/data_lansia')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataLansia()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')

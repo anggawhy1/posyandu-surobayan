@@ -1,0 +1,1695 @@
+DEBUG - 2025-04-20 01:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 01:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-20 02:26:27 --> mysqli_sql_exception: Unknown column 'nik' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:26:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE :nik: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:26:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE :nik: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:26:27 --> [Caused by] mysqli_sql_exception: Unknown column 'nik' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik` LIKE :nik: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:29:47 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:29:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:47 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:29:48 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:29:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:48 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:29:50 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:29:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:29:50 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:32:23 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:32:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:23 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:32:25 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:32:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:25 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:32:26 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:32:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:26 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:32:26 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:32:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:27 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:32:29 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:32:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:32:29 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:35:41 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:35:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:35:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:35:41 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-04-20 02:44:02 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', '')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:44:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:44:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:44:02 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 02:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-20 02:44:13 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', 'L')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 02:44:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:44:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 02:44:13 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(111): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 02:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 02:52:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PemantauanModel::getPivotDataFromFiltered
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PemantauanController.php(27): CodeIgniter\Model->__call('getPivotDataFromFiltered', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 02:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 02:58:21 --> DivisionByZeroError: Division by zero
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Pager\Pager.php on line 152.
+ 1 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Pager\Pager->store('default', 1, 0, 436, 0)
+ 2 APPPATH\Models\PemantauanModel.php(42): CodeIgniter\BaseModel->paginate(0, 'default', 1)
+ 3 APPPATH\Controllers\PemantauanController.php(29): App\Models\PemantauanModel->getFilteredDataWithPivot('', '', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 02:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 02:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:08:23 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PemantauanModel::getFilteredDataWithPivot
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PemantauanController.php(26): CodeIgniter\Model->__call('getFilteredDataWithPivot', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:14:49 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\PemantauanModel". This is a method of the Query Builder Class.
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Model.php on line 946.
+ 1 SYSTEMPATH\Model.php(946): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\PemantauanModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(926): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\PemantauanModel.php(42): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\PemantauanController.php(26): App\Models\PemantauanModel->getFilteredDataWithPivot('', '', 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 03:14:51 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\PemantauanModel". This is a method of the Query Builder Class.
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Model.php on line 946.
+ 1 SYSTEMPATH\Model.php(946): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\PemantauanModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(926): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\PemantauanModel.php(42): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\PemantauanController.php(26): App\Models\PemantauanModel->getFilteredDataWithPivot('', '', 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-20 03:31:50 --> mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause' in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\posyandu\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\posyandu\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\posyandu\app\Models\PemantauanModel.php(101): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+#7 C:\xampp\htdocs\posyandu\app\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('340217460521000...', 'L')
+#8 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+#9 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+#10 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-04-20 03:31:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+[Method: GET, Route: admin/pemantauan-balita]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PemantauanModel.php(101): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 5 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 03:31:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PemantauanModel.php(101): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 7 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 03:31:50 --> [Caused by] mysqli_sql_exception: Unknown column 'nik_anak' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+OR  `nama_anak` LIKE \'%3402174605210001%\' ESCAPE \'!\'
+AND `jenis_kelamin` = \'L\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `view_pemantauan_balita`
+WHERE `nik_anak` LIKE :nik_anak: ESCAPE \'!\'
+OR  `nama_anak` LIKE :nama_anak: ESCAPE \'!\'
+AND `jenis_kelamin` = :jenis_kelamin:', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PemantauanModel.php(101): CodeIgniter\BaseModel->paginate(50, 'default', 1)
+ 8 APPPATH\Controllers\PemantauanController.php(23): App\Models\PemantauanModel->getFilteredData('3402174605210001', 'L')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PemantauanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemantauanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:46:44 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\posyandu\app\Models\BalitaModel.php on line 61
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1008.
+ 1 APPPATH\Models\BalitaModel.php(61): CodeIgniter\Database\BaseBuilder->like('nik_anak', null)
+ 2 APPPATH\Controllers\BalitaController.php(31): App\Models\BalitaModel->getDataFiltered('', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 03:47:12 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\posyandu\app\Models\BalitaModel.php on line 61
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1008.
+ 1 APPPATH\Models\BalitaModel.php(61): CodeIgniter\Database\BaseBuilder->like('nik', null)
+ 2 APPPATH\Controllers\BalitaController.php(31): App\Models\BalitaModel->getDataFiltered('', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:49:22 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\posyandu\app\Models\BalitaModel.php on line 61
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1008.
+ 1 APPPATH\Models\BalitaModel.php(61): CodeIgniter\Database\BaseBuilder->like('nik_anak', null)
+ 2 APPPATH\Controllers\BalitaController.php(26): App\Models\BalitaModel->getDataFiltered('L', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:49:30 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\posyandu\app\Models\BalitaModel.php on line 61
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1008.
+ 1 APPPATH\Models\BalitaModel.php(61): CodeIgniter\Database\BaseBuilder->like('nik_anak', null)
+ 2 APPPATH\Controllers\BalitaController.php(26): App\Models\BalitaModel->getDataFiltered('P', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 03:49:35 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\posyandu\app\Models\BalitaModel.php on line 61
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1008.
+ 1 APPPATH\Models\BalitaModel.php(61): CodeIgniter\Database\BaseBuilder->like('nik_anak', null)
+ 2 APPPATH\Controllers\BalitaController.php(26): App\Models\BalitaModel->getDataFiltered('L', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 03:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 03:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 04:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 05:35:57 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 55.
+ 1 APPPATH\Views\admin\data_balita.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\BalitaController.php(35): view('admin/data_balita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 05:36:00 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 55.
+ 1 APPPATH\Views\admin\data_balita.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\BalitaController.php(35): view('admin/data_balita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 05:36:11 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 55.
+ 1 APPPATH\Views\admin\data_balita.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\BalitaController.php(34): view('admin/data_balita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-04-20 05:36:32 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 54.
+ 1 APPPATH\Views\admin\data_balita.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\BalitaController.php(35): view('admin/data_balita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BalitaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BalitaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 05:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:19 --> Masuk ke method update balita
+DEBUG - 2025-04-20 05:40:19 --> Data diterima: {"id":"21","nik_anak":"3402175305210001","nama_anak":"AISYAH FITRIANI NUR AZIZAH","tgl_lahir":"2021-05-13","jenis_kelamin":"P","berat_badan_lahir":"3400","panjang_badan_lahir":"49","lingkar_kepala_lahir":"0","premature_mature":"mature","no_kk":"3402170505110002","nik_ibu":"3402175401860001","nama_ibu":"WINJANI","nik_ayah":"3402171605860005","nama_ayah":"AGUS SATRIYA NUGROHOo"}
+DEBUG - 2025-04-20 05:40:19 --> Update berhasil untuk ID: 21
+DEBUG - 2025-04-20 05:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:27 --> Masuk ke method update balita
+DEBUG - 2025-04-20 05:40:27 --> Data diterima: {"id":"21","nik_anak":"3402175305210001","nama_anak":"AISYAH FITRIANI NUR AZIZAH","tgl_lahir":"2021-05-13","jenis_kelamin":"P","berat_badan_lahir":"3400","panjang_badan_lahir":"49","lingkar_kepala_lahir":"0","premature_mature":"mature","no_kk":"3402170505110002","nik_ibu":"3402175401860001","nama_ibu":"WINJANI","nik_ayah":"3402171605860005","nama_ayah":"AGUS SATRIYA NUGROHO"}
+DEBUG - 2025-04-20 05:40:27 --> Update berhasil untuk ID: 21
+DEBUG - 2025-04-20 05:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 05:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-20 06:38:44 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/data-lansia]
+in APPPATH\Views\admin\data-lansia.php on line 51.
+ 1 APPPATH\Views\admin\data-lansia.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data-lansia.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data-lansia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data-lansia', [], true)
+ 5 APPPATH\Controllers\LansiaController.php(28): view('admin/data-lansia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LansiaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LansiaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+DEBUG - 2025-04-20 06:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 06:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 07:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 07:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-20 17:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

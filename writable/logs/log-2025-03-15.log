@@ -1,0 +1,57 @@
+CRITICAL - 2025-03-15 01:38:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "main2.php"
+[Method: GET, Route: admin/data-balita]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main2.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('main2', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 4 APPPATH\Controllers\AdminController.php(14): view('admin/data_balita')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataBalita()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-15 02:11:50 --> ErrorException: Undefined variable $bulan
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 25.
+ 1 APPPATH\Views\admin\data_balita.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\AdminController.php(14): view('admin/data_balita')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataBalita()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-15 02:12:42 --> ErrorException: Undefined variable $bulan
+[Method: GET, Route: admin/data-balita]
+in APPPATH\Views\admin\data_balita.php on line 24.
+ 1 APPPATH\Views\admin\data_balita.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_balita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_balita', [], true)
+ 5 APPPATH\Controllers\AdminController.php(14): view('admin/data_balita')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->dataBalita()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-15 17:09:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data_remaja_putri.php"
+[Method: GET, Route: data-remaja-putri]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data_remaja_putri.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_remaja_putri', [], true)
+ 3 APPPATH\Controllers\Home.php(34): view('data_remaja_putri')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->dataRemajaPutri()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')

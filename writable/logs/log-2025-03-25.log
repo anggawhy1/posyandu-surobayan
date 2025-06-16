@@ -1,0 +1,473 @@
+CRITICAL - 2025-03-25 04:13:15 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-25 05:18:11 --> mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-25 05:18:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+[Method: POST, Route: arsipkan-usia-produktif]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:18:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:18:11 --> [Caused by] mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-25 05:20:28 --> mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif_surobayan' doesn't exist in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-25 05:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif_surobayan' doesn't exist
+[Method: POST, Route: arsipkan-usia-produktif]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:20:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif_surobayan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:20:28 --> [Caused by] mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif_surobayan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif_surobayan`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\UsiaProduktifController.php(59): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->arsipkan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-25 05:40:07 --> mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-25 05:40:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+[Method: DELETE, Route: hapus-usia-produktif/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:40:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:40:07 --> [Caused by] mysqli_sql_exception: Table 'posyandusurobayan_db.tb_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_usia_produktif`
+WHERE `id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+ERROR - 2025-03-25 05:43:46 --> mysqli_sql_exception: Table 'posyandusurobayan_db.tb_data_usia_produktif' doesn't exist in C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\posyandu\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\posyandu\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\posyandu\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\posyandu\app\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+#6 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+#7 C:\xampp\htdocs\posyandu\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\posyandu\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\posyandu\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\posyandu\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\posyandu\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-25 05:43:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_data_usia_produktif' doesn't exist
+[Method: DELETE, Route: hapus-usia-produktif/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:43:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'posyandusurobayan_db.tb_data_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 05:43:46 --> [Caused by] mysqli_sql_exception: Table 'posyandusurobayan_db.tb_data_usia_produktif' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_data_usia_produktif`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\UsiaProduktifController.php(69): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->hapus('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 06:54:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 06:55:51 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 06:55:58 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 06:56:19 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 06:56:23 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UsiaProduktifModel::getFilteredData
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\UsiaProduktifController.php(23): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:12:52 --> CodeIgniter\Pager\Exceptions\PagerException: "pagination_custom" is not a valid Pager template.
+[Method: GET, Route: admin/data-usia-produktif]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('pagination_custom')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'pagination_custom')
+ 3 APPPATH\Views\admin\data_usia_produktif.php(91): CodeIgniter\Pager\Pager->links('default', 'pagination_custom')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\posyandu\\app\\Views\\admin\\data_usia_produktif.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/data_usia_produktif', [], true)
+ 7 APPPATH\Controllers\UsiaProduktifController.php(34): view('admin/data_usia_produktif', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:45:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:47:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-25 07:48:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:49:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:49:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:50:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:50:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:52:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:54:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:54:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
+CRITICAL - 2025-03-25 07:56:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/tambah-usia-produktif.php"
+[Method: GET, Route: admin/tambah-usia-produktif]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/tambah-usia-produktif.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/tambah-usia-produktif', [], true)
+ 3 APPPATH\Controllers\UsiaProduktifController.php(142): view('admin/tambah-usia-produktif')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsiaProduktifController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsiaProduktifController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\posyandu\\public\\index.php')
